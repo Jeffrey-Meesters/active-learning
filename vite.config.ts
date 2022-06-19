@@ -3,5 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()]
+  plugins: [vue()],
+  envPrefix: 'CLIENT_' // Never set this as an empty string: https://vitejs.dev/config/index.html#envprefix
 })
